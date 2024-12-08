@@ -3,3 +3,4 @@ export const Button = () => {
         <button>Кнопка</button>
     );
 };
+

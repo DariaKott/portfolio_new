@@ -12,6 +12,6 @@ export const BlockTitle = (props: TitlePropsType) => {
 };
 
 const StyledTitle = styled.h2`
-    
+    text-align: center; 
 `
 
