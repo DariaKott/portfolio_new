@@ -7,11 +7,11 @@ import Proj3Img from "../../assets/images/photo/project3.jpeg";
 
 export const Projects = () => {
     return (
-        <>
+        <section>
         <BlockTitle title="Projects"/>
             <Project title={"Project 1"} text={"I created this personal project in order to show how to create an interface in Figma using a portfolio as an example."} src={Proj1Img}/>
             <Project title={"Project 2"} text={"I created this personal project in order to show how to create an interface in Figma using a portfolio as an example."} src={Proj2Img}/>
             <Project title={"Project 3"} text={"I created this personal project in order to show how to create an interface in Figma using a portfolio as an example."} src={Proj3Img}/>
-        </>
+        </section>
     );
 };

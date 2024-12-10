@@ -11,8 +11,8 @@ export const Main = () => {
                     <StyledH1>Frontend Developer</StyledH1>
                     <StyledHello>Hello, my name is Daria Kotelnikova</StyledHello>
                     <div>Short text with details about you, what you do or your professional career. You can add more information on the about page.</div>
-                    <Button/>
-                    <Button/>
+                    <Button>Projects</Button>
+                    <Button>LinkedIn</Button>
                 </div>
                 <div>
                     <img src={photo} alt="my photo" />

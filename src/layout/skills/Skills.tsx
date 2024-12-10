@@ -4,13 +4,13 @@ import { Icon } from "../../components/icon/Icon";
 
 export const Skills = () => {
     return (
-        <div>
+        <section>
             <BlockTitle title="Skills"/>
             <FlexWrapper>
                 <Icon iconId="vscode_icon"/>
                 <Icon iconId="js_icon"/>
                 <Icon iconId="es6_icon"/>
             </FlexWrapper>
-        </div>
+        </section>
     );
 };

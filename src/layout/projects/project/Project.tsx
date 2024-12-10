@@ -36,4 +36,5 @@ const Link = styled.button`
 
 const Photo = styled.img`
 max-width: 300px;
+object-fit: cover;
 `;

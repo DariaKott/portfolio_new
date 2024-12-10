@@ -1,6 +1,6 @@
-export const Button = () => {
-    return (
-        <button>Кнопка</button>
-    );
-};
+import styled from "styled-components";
+
+export const Button = styled.button`
+    
+`;
 
