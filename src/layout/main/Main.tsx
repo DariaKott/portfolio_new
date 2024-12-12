@@ -15,7 +15,7 @@ export const Main = () => {
                     <Button>LinkedIn</Button>
                 </div>
                 <div>
-                    <img src={photo} alt="my photo" />
+                    <img src={photo} alt="" aria-hidden="true" />
                 </div>
             </FlexWrapper>
 
@@ -33,4 +33,6 @@ const StyledH1 = styled.h1`
 const StyledHello = styled.span`
     color: #333333;
     font-size: 64px;
+    font-family: 'Roboto';
+    font-weight: 700;
 `;
