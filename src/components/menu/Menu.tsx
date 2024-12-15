@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { theme } from "../../assets/styles/Theme";
 
 export const Menu = () => {
     return (
@@ -19,6 +20,9 @@ export const Menu = () => {
 };
 
 const StyledMenu = styled.nav`
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
     ul {
         display: flex;
         gap: 30px;
@@ -27,6 +31,9 @@ const StyledMenu = styled.nav`
         a {
             text-decoration: none;
             color: #25282B;
+            :hover {
+                color: ${theme.colors.accent};
+            }
         }
     }
 `

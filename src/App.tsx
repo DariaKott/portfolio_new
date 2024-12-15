@@ -6,18 +6,21 @@ import { Header } from './layout/header/Header';
 import { Main } from './layout/main/Main';
 import { Projects } from './layout/projects/Projects';
 import { Skills } from './layout/skills/Skills';
+import { Container } from './components/Container';
 
 
 
 function App() {
     return (
         <div className="App">
-            <Header/>
-            <Main/>
-            <Skills/>
-            <Projects/>
-            <Contacts/>
-            <Footer/>
+            <Container>
+                <Header/>
+                <Main/>
+                <Skills/>
+                <Projects/>
+                <Contacts/>
+                <Footer/>
+            </Container>
         </div>
     );
 }
