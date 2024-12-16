@@ -20,4 +20,8 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background-color: ${theme.colors.bg};
 }
+
+section {
+    padding-top: 100px;
+}
 `;

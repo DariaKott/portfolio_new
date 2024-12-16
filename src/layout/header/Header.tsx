@@ -19,7 +19,6 @@ const StyledHeader = styled.header`
   color: #25282B;
   outline: 1px solid green;
   padding: 20px 30px 20px 0;
-  font-family: ;
   /* position: fixed;
   top: 0;
   left: 0;
