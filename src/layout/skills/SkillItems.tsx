@@ -9,7 +9,9 @@ export const SkillItems = (props: SkillPropsType) => {
     return (
         <>
             {props.skillItems.map((item: string) => (
-                <Skill><Icon key={item} iconId={item} width="100px" height="100px"/></Skill>
+                <Skill>
+                    <Icon key={item} iconId={item} width="100px" height="100px"/>
+                </Skill>
             ))}
         </>
     );

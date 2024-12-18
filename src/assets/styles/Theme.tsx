@@ -5,7 +5,8 @@ export const theme = {
         mainFonts: "#25282B",
         texts: "#828282",
         hello: "#333333",
-        accent: "#FDC435"
+        accent: "#FDC435",
+        formBord: "#E8ECF4"
 
     }
 };

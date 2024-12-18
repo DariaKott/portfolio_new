@@ -15,7 +15,3 @@ export const Skills = () => {
         </section>
     );
 };
-
-{/* <Icon iconId="vscode_icon"/>
-<Icon iconId="js_icon"/>
-<Icon iconId="es6_icon"/> */}
