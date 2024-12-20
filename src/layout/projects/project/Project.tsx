@@ -31,6 +31,11 @@ const StyledProject = styled.div`
     height: 30%;
     border-radius: 24px;
     overflow: hidden;
+    flex-direction: row;
+
+    &:nth-child(odd) {
+        flex-direction: row-reverse;
+    }
 `;
 
 const ProjInfo = styled.div`

@@ -23,6 +23,5 @@ const Skill = styled.div`
     margin-bottom: 5%;
     justify-content: center;
     align-items: center;
-
     
 `

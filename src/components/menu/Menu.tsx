@@ -29,10 +29,14 @@ const StyledMenu = styled.nav`
         list-style: none;
 
         a {
+            display: inline-block;
             text-decoration: none;
             color: #25282B;
             :hover {
-                color: ${theme.colors.accent};
+                color: ${theme.colors.hello};
+                /* background-color: ${theme.colors.texts};
+                border-radius: 3px; */
+                transform: scale(1.3);
             }
         }
     }

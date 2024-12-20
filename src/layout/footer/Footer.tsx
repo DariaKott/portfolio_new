@@ -27,18 +27,18 @@ export const Footer = () => {
                     </SocialItem>
                 </SocialList>
                 <Copyright>Daria Kotelnikova 2024</Copyright>
-                <img src={Footerbg} alt="" />
+                {/* <img src={Footerbg} alt="" /> */}
             </FlexWrapper>
         </StyledFooter>
     );
 };
 
 const StyledFooter = styled.footer`
-    /* background-image: url(${Footerbg}); */
+    background-image: url(${Footerbg});
 
-    /* height: 200px;
+    height: 200px;
     background-repeat: no-repeat;
-    background-size: contain; */
+    background-size: cover;
 
 `;
 

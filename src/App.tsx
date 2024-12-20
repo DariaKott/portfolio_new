@@ -13,14 +13,14 @@ import { Container } from './components/Container';
 function App() {
     return (
         <div className="App">
-            <Container>
+            {/* <Container> */}
                 <Header/>
                 <Main/>
                 <Skills/>
                 <Projects/>
                 <Contacts/>
                 <Footer/>
-            </Container>
+            {/* </Container> */}
         </div>
     );
 }

@@ -1,5 +1,6 @@
 import { createGlobalStyle } from "styled-components";
 import { theme } from "./Theme";
+import BgSpot from "../images/yellow-bg.svg";
 
 export const GlobalStyle = createGlobalStyle`
 *,
@@ -18,11 +19,17 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: ${theme.colors.bg};
+  background: url(${BgSpot}) ${theme.colors.bg};
+  background-repeat: no-repeat;
+  background-position: top right;
 }
 
 section {
-    padding-top: 100px;
+
+    & + section {
+        padding-top: 8%;
+    }
+
 }
 `;
 
