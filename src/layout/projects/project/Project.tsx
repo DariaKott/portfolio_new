@@ -27,13 +27,12 @@ export const Project = (props: ProjectPropsType) => {
 
 const StyledProject = styled.div`
     display: flex;
-    margin: 5% 10%;
-    height: 30%;
     border-radius: 24px;
     overflow: hidden;
-    flex-direction: row;
+    height: 33%;
+    max-height: 50vh;
 
-    &:nth-child(odd) {
+    &:nth-child(even) {
         flex-direction: row-reverse;
     }
 `;
@@ -59,11 +58,10 @@ display: inline-block;
 width: 150px;
 height: 43px;
 text-align: center;
-/* justify-content: baseline; */
 padding-top: 6px;
 `;
 
 const Photo = styled.img`
-max-width: 300px;
+width: 50%;
 object-fit: cover;
 `;

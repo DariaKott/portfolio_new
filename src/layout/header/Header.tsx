@@ -1,26 +1,27 @@
 import styled from "styled-components";
 import { Menu } from "../../components/menu/Menu";
 import { Container } from "../../components/Container";
+import { FlexWrapper } from "../../components/wrapper/FlexWrapper";
 import { theme } from "../../assets/styles/Theme";
 
 export const Header = () => {
     return (
-        <Container>
+       
             <StyledHeader>
-                <Name>Daria Kotelnikova</Name>
-                <Menu/>
+                <Container>
+                <FlexWrapper justify="space-between" align="center">
+                    <Name>Daria Kotelnikova</Name>
+                    <Menu/>
+                </FlexWrapper>
+                </Container>
             </StyledHeader>
-        </Container>
     );
 }
 
 const StyledHeader = styled.header`
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   color: #25282B;
   /* outline: 1px solid green; */
-  padding: 20px 30px 20px 0;
+  padding: 20px 0 20px 0;
 
   /* position: fixed;
   background-color: ${theme.colors.bg};

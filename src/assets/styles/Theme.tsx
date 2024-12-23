@@ -8,5 +8,10 @@ export const theme = {
         accent: "#FDC435",
         formBord: "#E8ECF4"
 
+    },
+
+    media: {
+        tablet: "screen and (max-width: 768px)",
+        mobile: "screen and (max-width: 576px)",
     }
 };

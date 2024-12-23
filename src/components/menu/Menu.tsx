@@ -23,6 +23,7 @@ const StyledMenu = styled.nav`
     font-family: 'Raleway', sans-serif;
     font-size: 18px;
     font-weight: 500;
+    padding-right: 20px;
     ul {
         display: flex;
         gap: 30px;
@@ -34,10 +35,12 @@ const StyledMenu = styled.nav`
             color: #25282B;
             :hover {
                 color: ${theme.colors.hello};
-                /* background-color: ${theme.colors.texts};
-                border-radius: 3px; */
                 transform: scale(1.3);
             }
         }
+    }
+
+    @media ${theme.media.mobile} {
+        display: none;
     }
 `
