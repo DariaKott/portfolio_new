@@ -1,21 +1,24 @@
 import styled from "styled-components";
 import { Button } from "../../components/button/Button";
 import { BlockTitle } from "../../components/title/BlockTitle";
+import { Container } from "../../components/Container";
 import { theme } from "../../assets/styles/Theme";
 
 export const Contacts = () => {
     return (
         <StyledContacts>
-        <BlockTitle title="Contact me"/>
-        <StyledForm action="submit">
-            <label htmlFor="name">Name</label>
-            <Field type="text" id="name"/>
-            <label htmlFor="email">Email</label>
-            <Field type="email" id="email" />
-            <label htmlFor="message">Message</label>
-            <Field as="textarea" id="message"/>
-            <Button type="submit">Send</Button>
-        </StyledForm>
+        <Container>
+            <BlockTitle title="Contact me"/>
+            <StyledForm action="submit">
+                <label htmlFor="name">Name</label>
+                <Field type="text" id="name"/>
+                <label htmlFor="email">Email</label>
+                <Field type="email" id="email" />
+                <label htmlFor="message">Message</label>
+                <Field as="textarea" id="message"/>
+                <Button type="submit">Send</Button>
+            </StyledForm>
+        </Container>
         </StyledContacts>
 
     );

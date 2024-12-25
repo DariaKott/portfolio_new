@@ -5,6 +5,7 @@ import { Text } from "../../components/text/Text";
 import photo from "../../assets/images/photo/photo_header.webp"
 import { theme } from "../../assets/styles/Theme";
 import { Container } from "../../components/Container";
+import { PhotoWithMask } from "../../components/maskedPhoto/PhotoWithMask";
 
 export const Main = () => {
     return (
@@ -18,9 +19,10 @@ export const Main = () => {
                             <Button>Projects</Button>
                             <LinkedIn>LinkedIn</LinkedIn>
                         </Info>
-                        <div>
+                        {/* <div>
                             <img src={photo} alt="" aria-hidden="true" />
-                        </div>
+                        </div> */}
+                        < PhotoWithMask/>
                     </FlexWrapper>
                 </Container>
             </section>

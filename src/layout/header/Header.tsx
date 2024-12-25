@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { Menu } from "../../components/menu/Menu";
+import { MobileMenu } from "../../components/menu/MobileMenu";
 import { Container } from "../../components/Container";
 import { FlexWrapper } from "../../components/wrapper/FlexWrapper";
 import { theme } from "../../assets/styles/Theme";
@@ -11,6 +12,7 @@ export const Header = () => {
                 <Container>
                 <FlexWrapper justify="space-between" align="center">
                     <Name>Daria Kotelnikova</Name>
+                    <MobileMenu></MobileMenu>
                     <Menu/>
                 </FlexWrapper>
                 </Container>

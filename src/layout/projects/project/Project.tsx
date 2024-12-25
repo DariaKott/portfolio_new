@@ -30,7 +30,7 @@ const StyledProject = styled.div`
     border-radius: 24px;
     overflow: hidden;
     height: 33%;
-    max-height: 50vh;
+    max-height: 60vh;
 
     &:nth-child(even) {
         flex-direction: row-reverse;
@@ -38,12 +38,19 @@ const StyledProject = styled.div`
 `;
 
 const ProjInfo = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
     background-color: ${theme.colors.bgProj};
-    padding: 10% 10%;
+    padding: 0 20px 10px 20px;
 `;
 
 const Title = styled.h3`
     margin-bottom: 10%;
+    font-family: "Playfair Display", serif;
+    font-weight: 700;
+    font-size: 32px;
 `;
  
 const ProjText = styled(Text)`
