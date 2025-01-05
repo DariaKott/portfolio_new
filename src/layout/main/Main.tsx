@@ -6,12 +6,13 @@ import photo from "../../assets/images/photo/photo_header.webp"
 import { theme } from "../../assets/styles/Theme";
 import { Container } from "../../components/Container";
 import { PhotoWithMask } from "../../components/maskedPhoto/PhotoWithMask";
+import { font } from "../../assets/styles/Common";
 
 export const Main = () => {
     return (
-            <section>
+            <StyledMain>
                 <Container>
-                    <FlexWrapper justify="space-between">
+                    <FlexWrapperMain justify="space-between">
                         <Info>
                             <StyledH1>Frontend Developer</StyledH1>
                             <StyledHello>Hello, my name is Daria Kotelnikova</StyledHello>
@@ -23,36 +24,53 @@ export const Main = () => {
                             <img src={photo} alt="" aria-hidden="true" />
                         </div> */}
                         < PhotoWithMask/>
-                    </FlexWrapper>
+                    </FlexWrapperMain>
                 </Container>
-            </section>
+            </StyledMain>
 
     );
 };
 
+const StyledMain = styled.section`
+    padding-top: 40px;
+`;
+
+const FlexWrapperMain = styled(FlexWrapper)`
+   @media ${theme.media.tablet} {
+    flex-direction: column-reverse;
+    
+   } 
+`;
+
 const StyledH1 = styled.h1`
-    color: #FDC435;
+    color: ${theme.colors.accent};
     font-family: 'Nunito', sans-serif;
     font-size: 20px;
     text-transform: uppercase;
 `;
 
 const StyledHello = styled.div`
-    color: #333333;
-    font-size: 64px;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 700;
+
+    ${font( {family: 'Roboto', weight: 700, Fmax: 64, Fmin: 42, lineHeight: 1.5, color: theme.colors.hello})};
     padding: 5% 0;
+
 `;
 
 const Info = styled.div`
-    width: 50%;
+    width: 40%;
     padding: 20px 0 20px 0;
+
+    @media ${theme.media.tablet} {
+        width: 100%;
+    }
 `;
 
 const InfoText = styled(Text)`
 padding-right: 20%;
-font-size: 24px;
+
+@media ${theme.media.tablet} {
+      padding-right: 0;
+    }
 `;
 
 const LinkedIn = styled(Button)`

@@ -21,17 +21,17 @@ export const Header = () => {
 }
 
 const StyledHeader = styled.header`
-  color: #25282B;
+  color: ${theme.colors.mainFonts};
   /* outline: 1px solid green; */
   padding: 20px 0 20px 0;
 
-  /* position: fixed;
-  background-color: ${theme.colors.bg};
-  opacity: 0.5;
+
+  position: fixed;
+  background-color: rgba(249, 250, 255, 0.5);
   top: 0;
   left: 0;
   right: 0;
-  z-index: 9999; */
+  z-index: 99999;
 
 `;
 

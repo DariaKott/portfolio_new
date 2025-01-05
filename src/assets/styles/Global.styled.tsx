@@ -21,6 +21,7 @@ body {
   background-color: ${theme.colors.bg};
   background-repeat: no-repeat;
   background-position: top right;
+  min-width: 320px;
 }
 
 section {

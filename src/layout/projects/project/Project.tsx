@@ -35,6 +35,10 @@ const StyledProject = styled.div`
     &:nth-child(even) {
         flex-direction: row-reverse;
     }
+
+    @media ${theme.media.mobile} {
+        flex-direction: column-reverse;
+    }
 `;
 
 const ProjInfo = styled.div`

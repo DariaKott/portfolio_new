@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { Icon } from "../../components/icon/Icon";
+import { theme } from "../../assets/styles/Theme";
 
 type SkillPropsType = {
     skillItems: Array<string>;
@@ -23,5 +24,9 @@ const Skill = styled.div`
     margin-bottom: 5%;
     justify-content: center;
     align-items: center;
+
+    @media ${theme.media.mobile} {
+        width: 50%;
+    }
     
 `
