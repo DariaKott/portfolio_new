@@ -13,14 +13,12 @@ import { Container } from './components/Container';
 function App() {
     return (
         <div className="App">
-            {/* <Container> */}
                 <Header/>
                 <Main/>
                 <Skills/>
                 <Projects/>
                 <Contacts/>
                 <Footer/>
-            {/* </Container> */}
         </div>
     );
 }
