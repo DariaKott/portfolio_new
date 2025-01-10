@@ -25,6 +25,7 @@ const Skill = styled.div`
     justify-content: center;
     align-items: center;
 
+
     @media ${theme.media.mobile} {
         width: 50%;
     }

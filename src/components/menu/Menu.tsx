@@ -23,7 +23,7 @@ const StyledMenu = styled.nav`
     font-family: 'Raleway', sans-serif;
     font-size: 18px;
     font-weight: 500;
-    padding-right: 20px;
+    padding-right: 10px;
     ul {
         display: flex;
         gap: 30px;

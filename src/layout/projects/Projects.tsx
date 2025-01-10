@@ -5,7 +5,6 @@ import Proj1Img from "../../assets/images/photo/project1.jpeg";
 import Proj2Img from "../../assets/images/photo/project2.jpeg";
 import Proj3Img from "../../assets/images/photo/project3.jpeg";
 import styled from "styled-components";
-import { FlexWrapper } from "../../components/wrapper/FlexWrapper";
 
 
 export const Projects = () => {

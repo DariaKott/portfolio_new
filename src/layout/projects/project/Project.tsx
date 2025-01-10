@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { FlexWrapper } from "../../../components/wrapper/FlexWrapper";
 import { Text } from "../../../components/text/Text";
 import { theme } from "../../../assets/styles/Theme";
 import { Button } from "../../../components/button/Button";
@@ -30,15 +29,22 @@ const StyledProject = styled.div`
     border-radius: 24px;
     overflow: hidden;
     height: 33%;
-    max-height: 60vh;
-
-    &:nth-child(even) {
-        flex-direction: row-reverse;
-    }
+    box-shadow: 0 6px 64px 0 rgba(112, 144, 176, 0.1);
+    /* max-height: 60vh; */
 
     @media ${theme.media.mobile} {
         flex-direction: column-reverse;
     }
+
+
+    &:nth-child(even) {
+        flex-direction: row-reverse;
+
+    @media ${theme.media.mobile} {
+        flex-direction: column-reverse;
+    }
+    }
+
 `;
 
 const ProjInfo = styled.div`
@@ -56,9 +62,9 @@ const Title = styled.h3`
     font-weight: 700;
     font-size: 32px;
 `;
- 
+
 const ProjText = styled(Text)`
- font-size: 18px;
+font-size: 18px;
 `;
 
 const Link = styled(Button)`
@@ -75,4 +81,8 @@ padding-top: 6px;
 const Photo = styled.img`
 width: 50%;
 object-fit: cover;
+
+@media ${theme.media.mobile} {
+    width: 100%;
+    }
 `;

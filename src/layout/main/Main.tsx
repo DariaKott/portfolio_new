@@ -15,14 +15,11 @@ export const Main = () => {
                     <FlexWrapperMain justify="space-between">
                         <Info>
                             <StyledH1>Frontend Developer</StyledH1>
-                            <StyledHello>Hello, my name is Daria Kotelnikova</StyledHello>
+                            <StyledHello>Hello, <span>my name is</span> <span>Daria Kotelnikova</span></StyledHello>
                             <InfoText>Short text with details about you, what you do or your professional career. You can add more information on the about page.</InfoText>
                             <Button>Projects</Button>
                             <LinkedIn>LinkedIn</LinkedIn>
                         </Info>
-                        {/* <div>
-                            <img src={photo} alt="" aria-hidden="true" />
-                        </div> */}
                         < PhotoWithMask/>
                     </FlexWrapperMain>
                 </Container>
@@ -32,13 +29,21 @@ export const Main = () => {
 };
 
 const StyledMain = styled.section`
-    padding-top: 40px;
+    padding-top: 5%;
+    overflow: clip;
+
+    @media ${theme.media.tablet} {
+        padding-top: 10%;
+   } 
+   @media ${theme.media.mobile} {
+    padding-top: 20%;
+   } 
 `;
 
 const FlexWrapperMain = styled(FlexWrapper)`
-   @media ${theme.media.tablet} {
+
+@media ${theme.media.tablet} {
     flex-direction: column-reverse;
-    
    } 
 `;
 
@@ -51,17 +56,24 @@ const StyledH1 = styled.h1`
 
 const StyledHello = styled.div`
 
-    ${font( {family: 'Roboto', weight: 700, Fmax: 64, Fmin: 42, lineHeight: 1.5, color: theme.colors.hello})};
+    ${font( {family: 'Roboto', weight: 700, Fmax: 64, Fmin: 36, lineHeight: 1.5, color: theme.colors.hello})};
     padding: 5% 0;
+
+    span {
+        white-space: nowrap;
+    }
 
 `;
 
 const Info = styled.div`
     width: 40%;
     padding: 20px 0 20px 0;
+    z-index: 999;
 
     @media ${theme.media.tablet} {
         width: 100%;
+        margin-top: -10%;
+        padding-top: 0;
     }
 `;
 

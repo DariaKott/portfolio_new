@@ -14,26 +14,24 @@ export const PhotoWithMask = () => {
 
 const PhotoWrapper = styled.div`
   width: 50%;
-  /* min-width: 720px;
-  height: 629px; */
   height: auto;
   position: relative;
-  /* overflow: hidden; */
   right: 0;
   top: 0;
-  outline: 1px solid black;
+  /* outline: 1px solid black; */
 
-  /* @media ${theme.media.tablet} {
-    width: 40%;
-    min-width: 40%;
-    /* min-width: 400px; 
-    height: auto;
-  } */
+  transform: translateY(-20%) scale(1.3) translateX(40px);
 
   @media ${theme.media.tablet} {
     width: 100%;
     min-width: 100%;
     height: 70vh;
+
+    transform: translateY(-20%) scale(1.3) translateX(60px);
+  }
+
+  @media ${theme.media.mobile} {
+    transform: translateY(-20%) scale(1.6) translateX(60px);
   }
 `;
 
@@ -53,7 +51,7 @@ const Photo = styled.img`
   left: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover; 
+  object-fit: contain; 
   z-index: 2; 
 
   /* Маска для обрезки фото */

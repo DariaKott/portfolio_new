@@ -22,7 +22,6 @@ export const Header = () => {
 
 const StyledHeader = styled.header`
   color: ${theme.colors.mainFonts};
-  /* outline: 1px solid green; */
   padding: 20px 0 20px 0;
 
 

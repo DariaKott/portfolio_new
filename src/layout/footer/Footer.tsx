@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { Icon } from "../../components/icon/Icon";
 import { FlexWrapper } from "../../components/wrapper/FlexWrapper";
-import Footerbg from "./../../assets/images/footer_yellow.svg"
+import Footerbg from "./../../assets/images/footer_yellow.svg";
 import { theme } from "../../assets/styles/Theme";
 export const Footer = () => {
     return(
@@ -10,9 +10,7 @@ export const Footer = () => {
                 <SocialList>
                     <SocialItem>
             <SocialLink>
-                            
-                                <Icon iconId={"insta_icon"} width="48" height="48"/>
-                           
+                            <Icon iconId={"insta_icon"} width="48" height="48"/>
                         </SocialLink> 
                     </SocialItem>
                     <SocialItem>
@@ -27,7 +25,6 @@ export const Footer = () => {
                     </SocialItem>
                 </SocialList>
                 <Copyright>Daria Kotelnikova 2024</Copyright>
-                {/* <img src={Footerbg} alt="" /> */}
             </FlexWrapper>
         </StyledFooter>
     );
@@ -36,9 +33,17 @@ export const Footer = () => {
 const StyledFooter = styled.footer`
     background-image: url(${Footerbg});
 
-    height: 200px;
+    height: 30vh;
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: top center;
+
+    @media ${theme.media.tablet} {
+    height: 200px;
+    
+    background-size: contain;
+    background-position: bottom center;
+    }
 
 `;
 
