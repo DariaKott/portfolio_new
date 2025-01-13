@@ -33,7 +33,7 @@ export const Footer = () => {
 const StyledFooter = styled.footer`
     background-image: url(${Footerbg});
 
-    height: 30vh;
+    min-height: 30vh;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top center;

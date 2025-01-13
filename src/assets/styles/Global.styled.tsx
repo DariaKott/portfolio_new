@@ -26,7 +26,7 @@ body {
 section {
 
     & + section {
-        padding-top: 8%;
+        padding-top: 50px;
     }
 
 }

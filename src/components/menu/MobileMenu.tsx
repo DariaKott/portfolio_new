@@ -1,6 +1,7 @@
 import { useState } from "react";
 import styled, { css } from "styled-components";
 import { theme } from "../../assets/styles/Theme";
+import { MenuItems } from "./MenuItems";
 
 export const MobileMenu = () => {
     const [menuIsOpen, setmenuIsOpen] = useState(false);
@@ -13,18 +14,8 @@ export const MobileMenu = () => {
             <span></span>
         </BurgerButton>
 
-        <MobileMenuPopup isOpen={menuIsOpen}>
-        <ul>
-            <li>
-                <a href="">About</a>
-            </li>
-            <li>
-                <a href="">Projects</a>
-                </li>
-            <li>
-                <a href="">Contacts</a>
-                </li>
-        </ul>
+        <MobileMenuPopup isOpen={menuIsOpen} onClick={ onBurgerBtnClick }>
+            <MenuItems/>
         </MobileMenuPopup>
 
     </StyledMobileMenu>

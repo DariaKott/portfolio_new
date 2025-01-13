@@ -6,16 +6,16 @@ import { theme } from "../../assets/styles/Theme";
 
 export const Contacts = () => {
     return (
-        <StyledContacts>
+        <StyledContacts id={"contacts"}>
         <Container>
             <BlockTitle title="Contact me"/>
             <StyledForm action="submit">
                 <label htmlFor="name">Name</label>
-                <Field type="text" id="name"/>
+                <Field type="text" id="name" name="name" autoComplete="name" />
                 <label htmlFor="email">Email</label>
-                <Field type="email" id="email" />
+                <Field type="email" id="email" name="email" autoComplete="email"/>
                 <label htmlFor="message">Message</label>
-                <Field as="textarea" id="message"/>
+                <Field as="textarea" id="message" name="message" autoComplete="off"/>
                 <Button type="submit">Send</Button>
             </StyledForm>
         </Container>
@@ -25,7 +25,7 @@ export const Contacts = () => {
 };
 
 const StyledContacts = styled.section`
- // min-height: 50vh;
+ min-height: 70vh;
  padding-bottom: 30px;
 `;
 

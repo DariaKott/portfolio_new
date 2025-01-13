@@ -1,20 +1,12 @@
 import styled from "styled-components";
 import { theme } from "../../assets/styles/Theme";
+import { MenuItems } from "./MenuItems";
 
 export const Menu = () => {
+
     return (
     <StyledMenu>
-        <ul>
-            <li>
-                <a href="">About</a>
-            </li>
-            <li>
-                <a href="">Projects</a>
-                </li>
-            <li>
-                <a href="">Contacts</a>
-                </li>
-        </ul>
+        <MenuItems/>
     </StyledMenu>
     );
 };

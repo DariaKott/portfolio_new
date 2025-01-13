@@ -15,7 +15,7 @@ export const Main = () => {
                     <FlexWrapperMain justify="space-between">
                         <Info>
                             <StyledH1>Frontend Developer</StyledH1>
-                            <StyledHello>Hello, <span>my name is</span> <span>Daria Kotelnikova</span></StyledHello>
+                            <StyledHello  id={"about"}>Hello, <span>my name is</span> <span>Daria Kotelnikova</span></StyledHello>
                             <InfoText>Short text with details about you, what you do or your professional career. You can add more information on the about page.</InfoText>
                             <Button>Projects</Button>
                             <LinkedIn>LinkedIn</LinkedIn>
@@ -57,7 +57,8 @@ const StyledH1 = styled.h1`
 const StyledHello = styled.div`
 
     ${font( {family: 'Roboto', weight: 700, Fmax: 64, Fmin: 36, lineHeight: 1.5, color: theme.colors.hello})};
-    padding: 5% 0;
+    
+    padding: 50px 0;
 
     span {
         white-space: nowrap;

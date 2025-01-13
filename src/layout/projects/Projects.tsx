@@ -9,7 +9,7 @@ import styled from "styled-components";
 
 export const Projects = () => {
     return (
-        <section>
+        <section id={"projects"}>
         <Container>
             <BlockTitle title="Projects"/>
                 <ProjectWrapper>
