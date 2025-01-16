@@ -4,6 +4,7 @@ import { MobileMenu } from "../../components/menu/MobileMenu";
 import { Container } from "../../components/Container";
 import { FlexWrapper } from "../../components/wrapper/FlexWrapper";
 import { theme } from "../../assets/styles/Theme";
+import { animateScroll as scroll } from "react-scroll";
 
 export const Header = () => {
     return (
@@ -11,7 +12,7 @@ export const Header = () => {
             <StyledHeader>
                 <Container>
                 <FlexWrapper justify="space-between" align="center">
-                    <Name>Daria Kotelnikova</Name>
+                    <Name onClick={scroll.scrollToTop}>Daria Kotelnikova</Name>
                     <MobileMenu></MobileMenu>
                     <Menu/>
                 </FlexWrapper>
@@ -34,9 +35,10 @@ const StyledHeader = styled.header`
 
 `;
 
-const Name = styled.div`
+const Name = styled.a`
     font-family: 'Comfortaa', sans-serif;
     font-weight: 700;
     font-size: 18px;
+    cursor: pointer;
 `;
 

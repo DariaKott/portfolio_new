@@ -15,7 +15,7 @@ export const MobileMenu = () => {
         </BurgerButton>
 
         <MobileMenuPopup isOpen={menuIsOpen} onClick={ onBurgerBtnClick }>
-            <MenuItems/>
+            <MenuItems onClick={onBurgerBtnClick}/>
         </MobileMenuPopup>
 
     </StyledMobileMenu>
@@ -125,6 +125,7 @@ const MobileMenuPopup = styled.div<{isOpen: boolean}>`
             display: inline-block;
             text-decoration: none;
             color: #25282B;
+            cursor: pointer;
         }
 }
 `;

@@ -1,4 +1,11 @@
-export const MenuItems = () => {
+import { Link } from "react-scroll";
+
+type MenuItemsProps = {
+    onClick?: () => void; 
+};
+
+export const MenuItems = ({onClick}: MenuItemsProps) => {
+
     const menuItems = [
         {
             title: "About",
@@ -18,7 +25,7 @@ export const MenuItems = () => {
         <ul>
             {menuItems.map((item, index) => (
                 <li key={index}>
-                    <a href={`#${item.href}`}>{item.title}</a>
+                    <Link onClick={onClick ? onClick : undefined} activeClass="active" to={item.href} smooth={true} spy={true}>{item.title}</Link>
                 </li>
             ))}
         </ul>

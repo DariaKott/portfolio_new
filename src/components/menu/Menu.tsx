@@ -25,9 +25,10 @@ const StyledMenu = styled.nav`
             display: inline-block;
             text-decoration: none;
             color: #25282B;
-            :hover {
+            &:hover, &.active {
                 color: ${theme.colors.hello};
                 transform: scale(1.3);
+                cursor: pointer;
             }
         }
     }

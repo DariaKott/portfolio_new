@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { theme } from "../../assets/styles/Theme";
+import { font } from "../../assets/styles/Common";
 
 type TitlePropsType = {
     title: string
@@ -14,11 +15,8 @@ export const BlockTitle = (props: TitlePropsType) => {
 
 const StyledTitle = styled.h2`
     text-align: center; 
-    font-family: 'Playfair Display', 'Times New Roman', Times, serif;
-    font-size: 36px;
-    font-weight: 700;
+    ${font( {family: "'Playfair Display', 'Times New Roman', Times, serif", weight: 700, Fmax: 48, Fmin: 36, lineHeight: 1.5, color: theme.colors.mainFonts})};
     margin-bottom: 80px;
-    /* border: 1px solid blue; */
 
     position: relative;
 
@@ -31,8 +29,6 @@ const StyledTitle = styled.h2`
         border-radius: 2px;
 
         position: absolute;
-        /* transform: translateX(-100%);
-        transform: translateY(200%); */
         left: 50%;
         transform: translateX(-50%);
         bottom: -14px;
