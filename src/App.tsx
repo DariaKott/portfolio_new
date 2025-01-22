@@ -6,7 +6,7 @@ import { Header } from './layout/header/Header';
 import { Main } from './layout/main/Main';
 import { Projects } from './layout/projects/Projects';
 import { Skills } from './layout/skills/Skills';
-import { Container } from './components/Container';
+import { GoTopBtn } from './components/goTopBtn/GoTopBtn';
 
 
 
@@ -19,6 +19,7 @@ function App() {
                 <Projects/>
                 <Contacts/>
                 <Footer/>
+                <GoTopBtn/>
         </div>
     );
 }

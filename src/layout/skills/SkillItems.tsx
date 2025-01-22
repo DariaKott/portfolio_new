@@ -2,16 +2,21 @@ import styled from "styled-components";
 import { Icon } from "../../components/icon/Icon";
 import { theme } from "../../assets/styles/Theme";
 
+type IconItem = {
+    id: string;
+    title: string;
+}
+
 type SkillPropsType = {
-    skillItems: Array<string>;
+    skillItems: IconItem[];
 }
 
 export const SkillItems = (props: SkillPropsType) => {
     return (
         <>
-            {props.skillItems.map((item: string) => (
-                <Skill>
-                    <Icon key={item} iconId={item} width="100px" height="100px"/>
+            {props.skillItems.map((item) => (
+                <Skill key={item.id}>
+                    <Icon iconId={item.id} title={item.title} width="100px" height="100px"/>
                 </Skill>
             ))}
         </>

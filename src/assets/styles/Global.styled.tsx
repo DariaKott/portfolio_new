@@ -30,5 +30,11 @@ section {
     }
 
 }
+
+button {
+    &:hover {
+        cursor: pointer;
+    }
+}
 `;
 

@@ -1,6 +1,7 @@
 export const theme = {
     colors: {
         bg: "#F9FAFF",
+        bgTransp: "rgba(249, 250, 255, 0.5)",
         bgProj: "#FFFFFF",
         mainFonts: "#25282B",
         texts: "#828282",

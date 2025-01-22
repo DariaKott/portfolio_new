@@ -2,11 +2,13 @@ import styled from "styled-components";
 import { Button } from "../../components/button/Button";
 import { FlexWrapper } from "../../components/wrapper/FlexWrapper";
 import { Text } from "../../components/text/Text";
-import photo from "../../assets/images/photo/photo_header.webp"
 import { theme } from "../../assets/styles/Theme";
 import { Container } from "../../components/Container";
 import { PhotoWithMask } from "../../components/maskedPhoto/PhotoWithMask";
 import { font } from "../../assets/styles/Common";
+import Typewriter from 'typewriter-effect';
+
+
 
 export const Main = () => {
     return (
@@ -14,13 +16,23 @@ export const Main = () => {
                 <Container>
                     <FlexWrapperMain justify="space-between">
                         <Info>
-                            <StyledH1>Frontend Developer</StyledH1>
+                            {/* <StyledH1>Frontend Developer</StyledH1> */}
+                            <StyledH1>
+                            <Typewriter
+                                options={{
+                                strings: ['Frontend Developer'],
+                                autoStart: true,
+                                loop: true,
+                                }}
+                            />
+                            </StyledH1>
                             <StyledHello  id={"about"}>Hello, <span>my name is</span> <span>Daria Kotelnikova</span></StyledHello>
                             <InfoText>Short text with details about you, what you do or your professional career. You can add more information on the about page.</InfoText>
                             <Button>Projects</Button>
                             <LinkedIn>LinkedIn</LinkedIn>
                         </Info>
                         < PhotoWithMask/>
+
                     </FlexWrapperMain>
                 </Container>
             </StyledMain>
