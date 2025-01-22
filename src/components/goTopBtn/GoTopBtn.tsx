@@ -26,16 +26,9 @@ export const GoTopBtn = () => {
     }, []);
 
     return (
-        <>
-        {showBtn && (
-                <StyledGoTopBtn onClick={scroll.scrollToTop} aria-label="Scroll to top">
-
+            <StyledGoTopBtn className={showBtn ? "show" : ""} onClick={scroll.scrollToTop} aria-label="Scroll to top">
                 <Icon iconId="arrow_up" width="30px" height="25px" title="to top"/>
-        
-                </StyledGoTopBtn>
-
-        )}
-        </>
+            </StyledGoTopBtn>
 
     );
 };
@@ -48,6 +41,12 @@ padding-top: 2px;
 border: none;
 background-color: ${theme.colors.bgTransp};
 border-radius: 50%;
+transform: translateY(100px); /* Начальное положение (скрыто) */
+opacity: 0;
+transition: transform 0.3s ease, opacity 0.3s ease;
 
-    
+&.show {
+        transform: translateY(0); /* Появление на экране */
+        opacity: 1;
+    }
 `;
