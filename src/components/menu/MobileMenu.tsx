@@ -13,11 +13,9 @@ export const MobileMenu = () => {
         <BurgerButton isOpen={menuIsOpen} onClick={ onBurgerBtnClick }>
             <span></span>
         </BurgerButton>
-
         <MobileMenuPopup isOpen={menuIsOpen} onClick={ onBurgerBtnClick }>
             <MenuItems onClick={onBurgerBtnClick}/>
         </MobileMenuPopup>
-
     </StyledMobileMenu>
     );
 };
@@ -101,13 +99,17 @@ const MobileMenuPopup = styled.div<{isOpen: boolean}>`
     right: 0;
     bottom: 0;
     z-index: 999;
+    height: 100vh; 
     background-color: rgba(249, 250, 255, 0.95);
-    display: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(-100%);
+    transition: 0.8s ease;
+
 
     ${props => props.isOpen && css<{isOpen: boolean}>`
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        transform: translateY(0);
     `
 
     }

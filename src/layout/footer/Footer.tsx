@@ -66,6 +66,7 @@ height: 48px;
 justify-content: center;
 align-items: center;
 cursor: pointer;
+transition: ${theme.animations.transition};
 
 &:hover {
 transform: scale(1.2);

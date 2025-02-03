@@ -13,9 +13,9 @@ export const Header = () => {
     useEffect(() => {
         const handleScroll = () => {
             if (window.scrollY > 50) {
-                setScrolled(true); // Хедер уже не в верхнем положении
+                setScrolled(true); 
             } else {
-                setScrolled(false); // Хедер в самом верху
+                setScrolled(false); 
             }
         };
 
@@ -43,20 +43,17 @@ const StyledHeader = styled.header`
   color: ${theme.colors.mainFonts};
   padding: 20px 0 20px 0;
   position: fixed;
-  /* background-color: rgba(249, 250, 255, 0.5); */
   top: 0;
   left: 0;
   right: 0;
   z-index: 99999;
   background-color: transparent;
 
-  /* transition: background-color 0.3s ease, box-shadow 0.3s ease; */
-
-    transition: transform 0.5s ease, opacity 0.5s ease;
-
-
+  transition: ${theme.animations.transition};
 
   &.scrolled {
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(3px);
     background-color: rgba(249, 250, 255, 0.5);
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   }

@@ -41,12 +41,15 @@ padding-top: 2px;
 border: none;
 background-color: ${theme.colors.bgTransp};
 border-radius: 50%;
-transform: translateY(100px); /* Начальное положение (скрыто) */
-opacity: 0;
+transform: translateY(100px); 
 transition: transform 0.3s ease, opacity 0.3s ease;
 
 &.show {
-        transform: translateY(0); /* Появление на экране */
-        opacity: 1;
+    transform: translateY(0); 
+    opacity: 1;
+    }
+
+@media (min-width: 1230px) {
+    right: calc((100vw - 1230px) / 2 + 30px);
     }
 `;

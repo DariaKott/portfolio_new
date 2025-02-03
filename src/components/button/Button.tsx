@@ -14,6 +14,7 @@ height: 43px;
 border-radius: 8px;
 box-shadow: none;
 margin-top: 4%;
+transition: ${theme.animations.transition};
 
 + button {
     margin-left: 12px;

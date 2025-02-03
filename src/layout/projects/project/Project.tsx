@@ -28,12 +28,14 @@ const StyledProject = styled.div`
     display: flex;
     border-radius: 24px;
     overflow: hidden;
-    height: 33%;
     box-shadow: 0 6px 64px 0 rgba(112, 144, 176, 0.1);
-    /* max-height: 60vh; */
+    flex: 1;
+    max-height: 526px;
 
     @media ${theme.media.mobile} {
         flex-direction: column-reverse;
+        max-height: none;
+        height: auto;
     }
 
 
@@ -54,6 +56,12 @@ const ProjInfo = styled.div`
     justify-content: center;
     background-color: ${theme.colors.bgProj};
     padding: 0 20px 10px 20px;
+
+    @media ${theme.media.mobile} {
+    width: 100%;
+    /* flex: 1; */
+    height: 524px;
+    }
 `;
 
 const Title = styled.h3`
@@ -84,5 +92,7 @@ object-fit: cover;
 
 @media ${theme.media.mobile} {
     width: 100%;
+    /* flex: 1; */
+    height: 524px;
     }
 `;

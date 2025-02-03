@@ -32,6 +32,8 @@ section {
 }
 
 button {
+    transition: ${theme.animations.transition};
+
     &:hover {
         cursor: pointer;
     }

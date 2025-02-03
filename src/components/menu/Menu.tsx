@@ -25,6 +25,8 @@ const StyledMenu = styled.nav`
             display: inline-block;
             text-decoration: none;
             color: #25282B;
+            transition: ${theme.animations.transition};
+
             &:hover, &.active {
                 color: ${theme.colors.hello};
                 transform: scale(1.3);
