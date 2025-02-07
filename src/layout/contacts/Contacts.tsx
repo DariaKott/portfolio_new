@@ -99,6 +99,7 @@ const StyledForm = styled.form`
   textarea {
     resize: none;
     height: 160px;
+    padding-top: 10px;
   }
 
   button {
