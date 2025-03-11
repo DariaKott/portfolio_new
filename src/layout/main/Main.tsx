@@ -39,12 +39,14 @@ export const Main = () => {
             <a
               href="https://docs.google.com/document/d/1SmTFd9N5AEfeMxR-85NSW-Tom0xyBRxOeg3MOCiWAnA/edit?tab=t.0"
               target="_blank"
+              rel="noopener noreferrer"
             >
               <Button>CV</Button>
             </a>
             <a
               href="https://www.linkedin.com/in/daria-kotelnikova-2566071aa/"
               target="_blank"
+              rel="noopener noreferrer"
             >
               <LinkedIn>LinkedIn</LinkedIn>
             </a>

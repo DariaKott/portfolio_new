@@ -2,8 +2,6 @@ import { BlockTitle } from "../../components/title/BlockTitle";
 import { Project } from "./project/Project";
 import { Container } from "../../components/Container";
 import Proj1Img from "../../assets/images/photo/ProjWordsApp.png";
-import Proj2Img from "../../assets/images/photo/project2.jpeg";
-import Proj3Img from "../../assets/images/photo/project3.jpeg";
 import styled from "styled-components";
 
 export const Projects = () => {
