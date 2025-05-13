@@ -27,14 +27,15 @@ export const Main = () => {
               Hello, <span>my name is</span> <span>Daria Kotelnikova</span>
             </StyledHello>
             <InfoText>
-              Test I am an aspiring Frontend Developer with a passion for
-              creating interactive and user-friendly web applications. I take
-              pride in writing well-structured code and designing responsive,
-              adaptive pages. I am detail-oriented but prefer to focus on
-              functionality rather than just aesthetics. Eager to grow my
-              skills, I am actively seeking opportunities to contribute to real
-              projects and learn in a dynamic team. With a strong foundation in
-              HTML, CSS, JavaScript, and React, I am ready for new challenges.
+              Test test test I am an aspiring Frontend Developer with a passion
+              for creating interactive and user-friendly web applications. I
+              take pride in writing well-structured code and designing
+              responsive, adaptive pages. I am detail-oriented but prefer to
+              focus on functionality rather than just aesthetics. Eager to grow
+              my skills, I am actively seeking opportunities to contribute to
+              real projects and learn in a dynamic team. With a strong
+              foundation in HTML, CSS, JavaScript, and React, I am ready for new
+              challenges.
             </InfoText>
             <a
               href="https://docs.google.com/document/d/1SmTFd9N5AEfeMxR-85NSW-Tom0xyBRxOeg3MOCiWAnA/edit?tab=t.0"
