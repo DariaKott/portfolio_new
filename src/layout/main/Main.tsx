@@ -27,7 +27,7 @@ export const Main = () => {
               Hello, <span>my name is</span> <span>Daria Kotelnikova</span>
             </StyledHello>
             <InfoText>
-              Test test test I am an aspiring Frontend Developer with a passion
+              I am an aspiring Frontend Developer with a passion
               for creating interactive and user-friendly web applications. I
               take pride in writing well-structured code and designing
               responsive, adaptive pages. I am detail-oriented but prefer to
