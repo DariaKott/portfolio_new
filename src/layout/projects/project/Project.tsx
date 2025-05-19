@@ -6,7 +6,9 @@ import { Button } from "../../../components/button/Button";
 type ProjectPropsType = {
   title: string;
   text: string;
-  src: string;
+  src?: string;
+  videoSrc?: string;
+  link: string;
 };
 
 export const Project = (props: ProjectPropsType) => {
@@ -15,11 +17,26 @@ export const Project = (props: ProjectPropsType) => {
       <ProjInfo>
         <Title>{props.title}</Title>
         <ProjText>{props.text}</ProjText>
-        <Link as="a" href="https://dariakott.github.io/serbian-words-app/">
+        <Link
+          as="a"
+          href={props.link}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           View Project
         </Link>
       </ProjInfo>
-      <Photo src={props.src} alt="Project cover" />
+
+      {props.videoSrc ? (
+        <Video autoPlay loop muted playsInline poster={props.src}>
+          <source src={props.videoSrc} type="video/mp4" />
+          Your browser does not support the video tag.
+        </Video>
+      ) : (
+        <Photo src={props.src} alt="Project cover" />
+      )}
+
+      {/* <Photo src={props.src} alt="Project cover" /> */}
     </StyledProject>
   );
 };
@@ -91,6 +108,18 @@ const Photo = styled.img`
   @media ${theme.media.mobile} {
     width: 100%;
     /* flex: 1; */
+    height: 524px;
+  }
+`;
+
+const Video = styled.video`
+  width: 50%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+
+  @media ${theme.media.mobile} {
+    width: 100%;
     height: 524px;
   }
 `;
