@@ -1,7 +1,7 @@
 import { BlockTitle } from "../../components/title/BlockTitle";
 import { Project } from "./project/Project";
 import { Container } from "../../components/Container";
-import Proj1Img from "../../assets/images/photo/ProjWordsApp.png";
+import Proj1Img from "../../assets/images/photo/ProjWordsApp2.png";
 import styled from "styled-components";
 import MontelloraVideo from "../../assets/projects/MontelloraDemo.mp4";
 import MontelloraFallback from "../../assets/projects/MontelloraFallback.png";
