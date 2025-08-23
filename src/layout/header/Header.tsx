@@ -8,36 +8,35 @@ import { theme } from "../../assets/styles/Theme";
 import { animateScroll as scroll } from "react-scroll";
 
 export const Header = () => {
-    const [scrolled, setScrolled] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
 
-    useEffect(() => {
-        const handleScroll = () => {
-            if (window.scrollY > 50) {
-                setScrolled(true); 
-            } else {
-                setScrolled(false); 
-            }
-        };
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY >= 0) {
+        setScrolled(true);
+      } else {
+        setScrolled(false);
+      }
+    };
 
-        window.addEventListener("scroll", handleScroll);
-        return () => {
-            window.removeEventListener("scroll", handleScroll);
-        };
-    }, []);
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
-    return (
-       
-            <StyledHeader className={scrolled ? "scrolled" : ""}>
-                <Container>
-                <FlexWrapper justify="space-between" align="center">
-                    <Name onClick={scroll.scrollToTop}>Daria Kotelnikova</Name>
-                    <MobileMenu></MobileMenu>
-                    <Menu/>
-                </FlexWrapper>
-                </Container>
-            </StyledHeader>
-    );
-}
+  return (
+    <StyledHeader className={scrolled ? "scrolled" : ""}>
+      <Container>
+        <FlexWrapper justify="space-between" align="center">
+          <Name onClick={scroll.scrollToTop}>Daria Kotelnikova</Name>
+          <MobileMenu></MobileMenu>
+          <Menu />
+        </FlexWrapper>
+      </Container>
+    </StyledHeader>
+  );
+};
 
 const StyledHeader = styled.header`
   color: ${theme.colors.mainFonts};
@@ -60,9 +59,8 @@ const StyledHeader = styled.header`
 `;
 
 const Name = styled.a`
-    font-family: 'Comfortaa', sans-serif;
-    font-weight: 700;
-    font-size: 18px;
-    cursor: pointer;
+  font-family: "Comfortaa", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  cursor: pointer;
 `;
-

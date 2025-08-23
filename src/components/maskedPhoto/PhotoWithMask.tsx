@@ -1,7 +1,7 @@
-import styled from 'styled-components';
-import yellowSpot from '../../assets/images/whole-yellow-bg.svg';
-import photo from '../../assets/images/photo/photo_header.png';
-import { theme } from '../../assets/styles/Theme';
+import styled from "styled-components";
+import yellowSpot from "../../assets/images/whole-yellow-bg.svg";
+import photo from "../../assets/images/photo/check.webp";
+import { theme } from "../../assets/styles/Theme";
 
 export const PhotoWithMask = () => {
   return (
@@ -42,7 +42,7 @@ const Spot = styled.img`
   width: 100%;
   height: 100%;
   object-fit: contain;
-  z-index: 1; 
+  z-index: 1;
 `;
 
 const Photo = styled.img`
@@ -52,8 +52,8 @@ const Photo = styled.img`
   padding-top: 50px;
   width: 100%;
   height: 100%;
-  object-fit: contain; 
-  z-index: 2; 
+  object-fit: contain;
+  z-index: 2;
 
   /* Маска для обрезки фото */
   -webkit-mask: url(${yellowSpot}) no-repeat center / contain;
